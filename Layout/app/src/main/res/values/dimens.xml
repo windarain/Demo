@@ -1,0 +1,13 @@
+<resources>
+    <!--linearlayout的大小 -->
+    <dimen name="mag">2dp</dimen><!--margin长度 -->
+    <dimen name="pad">6dp</dimen><!--padding长度 -->
+    <dimen name="size">16dp</dimen><!--textview里的text的大小 -->
+    <!--relativelayout的大小 -->
+    <dimen name="mag2">20dp</dimen><!--margin长度 -->
+    <dimen name="mag22">8dp</dimen><!--margin长度 -->
+    <dimen name="pad2">16dp</dimen><!--padding长度 -->
+    <dimen name="size2">10dp</dimen><!--textview里的text的大小 -->
+    <!--tablelayout的大小 -->
+    <dimen name="padle">5dp</dimen><!--padding长度 -->
+</resources>

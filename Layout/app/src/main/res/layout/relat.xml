@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <TextView
+        android:id="@+id/gray"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout Examples"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/size2"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:text="RED"
+        android:textSize="10dp"
+        android:layout_below="@id/gray"
+        android:background="@color/red"/>
+    <TextView
+        android:id="@+id/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:text="ORANGE"
+        android:textSize="@dimen/size2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gray"
+        android:background="@color/orange"
+        android:layout_marginBottom="@dimen/mag2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:text="YELLOW"
+        android:textSize="@dimen/size2"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/gray"
+        android:background="@color/yellow" />
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:layout_margin="@dimen/mag22"
+        android:text="BLUE"
+        android:textSize="@dimen/size2"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/orange"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:text="GREEN"
+        android:layout_toLeftOf="@id/blue"
+        android:layout_alignTop="@id/blue"
+        android:textSize="@dimen/size2"
+        android:background="@color/green"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:text="INDIGO"
+        android:layout_toRightOf="@id/blue"
+        android:layout_alignTop="@id/blue"
+        android:textSize="@dimen/size2"
+        android:background="@color/indigo"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad2"
+        android:text="VIOLET"
+        android:layout_below="@id/blue"
+        android:textSize="@dimen/size2"
+        android:background="@color/violet"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/mag2"/>
+</RelativeLayout>
