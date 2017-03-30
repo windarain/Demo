@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="In-line preferences"
+        >
+        <CheckBoxPreference
+            android:key="lcb"
+            android:title="CheckBoxPreference"
+            android:summary="This is a checkbox"
+            >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Dialog-based preferences">
+        <EditTextPreference
+            android:key="etp"
+            android:title="Edit text preference"
+            android:summary="An example that uses an edit text dialog"
+            android:dialogTitle="Edit text preference" />
+        <ListPreference
+            android:key="lp"
+            android:title="List preference"
+            android:summary="An example that uses a list dialog"
+            android:dialogTitle="choose one"
+            android:entries="@array/choose"
+            android:entryValues="@array/choose_value"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Launch preferences">
+        <PreferenceScreen
+            android:title="Screen preference"
+            android:summary="shows another screen of preferences">
+            <CheckBoxPreference
+                android:key="scb"
+                android:title="Toggle preference"
+                android:summary="Preference that is on the next screen but same hierarchy"
+                >
+            </CheckBoxPreference>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Intent preference"
+            android:summary="launches an Activity from an Intent"
+            >
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.baidu.com" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Preference attributes">
+        <CheckBoxPreference
+            android:key="acb1"
+            android:title="Parent checkbox preference"
+            android:summary="This is visually a parent"
+            >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="acb2"
+            android:title="Child checkbox preference"
+            android:summary="This is visually a child"
+            android:dependency="acb1">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
